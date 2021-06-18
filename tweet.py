@@ -13,11 +13,6 @@ auth = tweepy.OAuthHandler(config.API_KEY, config.API_SECRET_KEY)
 auth.set_access_token(config.ACCESS_TOKEN, config.ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
-screen_name = "devisle"
-
-user = api.get_user(screen_name)
-tweets = api.user_timeline(screen_name = screen_name, tweet_mode="extended", include_retweets=False)
-full_tweet = [[tweet.full_text] for tweet in tweets]
 
 try:
     api.update_status("New release " + version + " 🎉🎉!" "\n\nhttps://github.com/devisle/advanced-react-cli\n\n#js #react #npm")
