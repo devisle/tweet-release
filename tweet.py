@@ -16,6 +16,7 @@ api = tweepy.API(auth)
 
 try:
     api.update_status("New release " + version + " 🎉🎉!" "\n\nhttps://github.com/devisle/advanced-react-cli\n\n#js #react #npm")
+    print("New release has been tweeted.")
 except tweepy.TweepError as error:
     if error.api_code == 187:
         print('Tweet already exists.')
