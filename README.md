@@ -1,4 +1,4 @@
-# Twitter-Release-Bot
+# Tweet-Release
 
 Posts a new tweet when [advanced-react-cli](https://github.com/devisle/advanced-react-cli) has a new version release.
 
@@ -9,7 +9,7 @@ Code works fine for one package, but needs to be rewritten when using multiple p
 Clone repository:
 
 ```
-git clone https://github.com/devisle/twitter-release-bot.git
+git clone https://github.com/devisle/tweet-release.git
 ```
 
 Install requirements:
